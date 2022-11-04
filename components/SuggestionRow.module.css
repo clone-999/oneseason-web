@@ -1,0 +1,55 @@
+  
+  .containerr{
+    padding: 20;
+    height: 92%;
+    background-Color: white;
+    position: static;
+  }
+  .textInput{
+    font-size: 20;
+    margin-bottom: 20;
+  }
+  .rowler{
+    flex-direction: row;
+    align-items: center;
+    padding-top: 15;
+    padding-bottom: 15;
+    border-bottom-width: 1;
+    border-color: lightgrey;
+    z-index: 67;
+  }
+  .iconContainer{
+    padding: 7;
+    border-radius: 10px;
+    margin-right: 15px;
+  }
+  .locationText{
+    justify-self: center;
+  }
+
+  .dropdown {
+    background-color: white;
+    display: flex;
+    border: 1px solid gray;
+    z-index: 89;
+  }
+  
+  .dropdown:empty {
+    border: none;
+  }
+  
+  .dropdownRow {
+    cursor: pointer;
+    text-align: start;
+    margin: 2px 0;
+    display: flex;
+    padding: 10px 5px;
+  }
+  
+  .input {
+    width: 220px;
+  }
+  
+  .search-inner {
+    display: flex;
+  }
