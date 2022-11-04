@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Link from 'next/link';
 
 function Header() {
   return (
@@ -7,20 +8,24 @@ function Header() {
           <div className="main-bar clearfix ">
             <div className="container clearfix">
               <div className="logo-header mostion">
-                <a href="/" className="logo-1"><img src="/front/images/logo-white-1.png" alt="" /></a>
-                <a href="/" className="logo-2"><img src="/front/images/logo-black-1.png" alt="" /></a>
+                <Link href="/" className="logo-1"><img src="/front/images/logo-white-1.png" alt="" /></Link>
+                <Link href="/" className="logo-2"><img src="/front/images/logo-black-1.png" alt="" /></Link>
               </div>
 
               <div className="extra-nav">
                 <div className="extra-cell">
-                  <a href="#" className="site-button-link white"><i className="ti-import m-r5 rotate90"></i> Sign In</a>
-                  <a href="#" className="site-button radius-xl m-l10"><i className="fa fa-plus m-r5"></i> Add Listing</a>
+                  <Link href="#" className="site-button-link white">
+                    <><i className="ti-import m-r5 rotate90"></i> Sign In</>
+                  </Link>
+                  <Link href="#" className="site-button radius-xl m-l10">
+                    <><i className="fa fa-plus m-r5"></i> Add Listing</>
+                  </Link>
                 </div>
               </div>
 
               <div className="header-nav navbar-collapse collapse justify-content-end" id="navbarNavDropdown">
                 <ul className="nav navbar-nav">
-                  <li><a href="/">HOME</a></li>
+                  <li><Link href="/">HOME</Link></li>
                 </ul>
               </div>
             </div>

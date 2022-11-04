@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Link from 'next/link';
 
 const BreadCrumb = () => {
   return (
@@ -10,7 +11,7 @@ const BreadCrumb = () => {
                 <p>Find awesome Hotels, Holiday Homes & Apartments.</p>
                 <div className="breadcrumb-row">
                     <ul className="list-inline">
-                        <li><a href="/">Home</a></li>
+                        <li><Link href="/">Home</Link></li>
                         <li>Search Hotels</li>
                     </ul>
                 </div>

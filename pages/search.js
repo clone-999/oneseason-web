@@ -73,7 +73,7 @@ const Search = ({query}) => {
 
                                     <div className="row">
                                         {properties.map((property) => (
-                                            <div className="col-lg-12">
+                                            <div key={property.hotel_id} className="col-lg-12">
                                                 <div className="listing-bx listing-half m-b30">
                                                     <div className="listing-media">
                                                         <Image 
