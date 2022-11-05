@@ -47,7 +47,7 @@ const Search = ({query}) => {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-4 col-md-6">
-                                    <HotelSearchForm sideBar={true} initTerm={query.search_term} initAdults={query.adults} initChildren={query.children} initRooms={query.rooms} initStartDate={query.arrival_date} initEndDate={query.departure_date} initLatitude={query.latitude} initLongitude={query.longitude} initReload={true} changer={changer} setChanger={setChanger} />
+                                    <HotelSearchForm sideBar={true} initTerm={query.search_term} initAdults={query.adults} initChildren={query.children} initRooms={query.rooms} initStartDate={query.arrival_date} initEndDate={query.departure_date} initLatitude={query.latitude} initLongitude={query.longitude} initReload={true} changer={changer} setChanger={setChanger} side={true} />
                                 </div>
 
                                 <div className="col-lg-8 col-md-6">

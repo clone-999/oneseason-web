@@ -9,7 +9,7 @@ import 'antd/dist/antd.css';
 
 const { RangePicker } = DatePicker;
 
-const HotelSearchForm = ({sideBar, initTerm, initAdults, initChildren, initRooms, initStartDate, initEndDate, initLatitude, initLongitude, initReload, changer, setChanger}) => {
+const HotelSearchForm = ({sideBar, initTerm, initAdults, initChildren, initRooms, initStartDate, initEndDate, initLatitude, initLongitude, initReload, changer, setChanger, side=false}) => {
     const router = useRouter();
     const [guestPort, setGuestPort] = useState({});
     const [display, setDisplay] = useState(false);
@@ -52,11 +52,15 @@ const HotelSearchForm = ({sideBar, initTerm, initAdults, initChildren, initRooms
     const submitForm = (e) => {
         e.preventDefault();
 
-        setChanger(!changer);
+        if (side) {
+            setChanger(!changer);
+        }
 
-        
+        if (reload) {
             router.push(`/search?guest_qty=${adults + children}&latitude=${latitude}&longitude=${longitude}&room_qty=${rooms}&dest_ids=${destinationsId}&departure_date=${endDate}&arrival_date=${startDate}&offset=0&search_type=latlong&search_term=${searchTerm}&adults=${adults}&children=${children}`);
-        
+        } else{
+            router.push(`/search?guest_qty=${adults + children}&latitude=${latitude}&longitude=${longitude}&room_qty=${rooms}&dest_ids=${destinationsId}&departure_date=${endDate}&arrival_date=${startDate}&offset=0&search_type=latlong&search_term=${searchTerm}&adults=${adults}&children=${children}`);
+        }
     }
 
     return (
