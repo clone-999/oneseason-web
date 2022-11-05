@@ -8,8 +8,9 @@ function Header() {
           <div className="main-bar clearfix ">
             <div className="container clearfix">
               <div className="logo-header mostion">
-                <Link href="/" className="logo-1"><img src="/front/images/logo-white-1.png" alt="" /></Link>
-                <Link href="/" className="logo-2"><img src="/front/images/logo-black-1.png" alt="" /></Link>
+                <Link href="/" className="logo-1">
+                  <img src="/front/images/logo-white-1.png" alt="" style={{marginTop: 20}}/>
+                </Link>
               </div>
 
               <div className="extra-nav">

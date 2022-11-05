@@ -57,7 +57,7 @@ const HotelSearchForm = ({sideBar, initTerm, initAdults, initChildren, initRooms
         }
 
         if (reload) {
-            router.push(`/search?guest_qty=${adults + children}&latitude=${latitude}&longitude=${longitude}&room_qty=${rooms}&dest_ids=${destinationsId}&departure_date=${endDate}&arrival_date=${startDate}&offset=0&search_type=latlong&search_term=${searchTerm}&adults=${adults}&children=${children}`);
+            window.location.href = `/search?guest_qty=${adults + children}&latitude=${latitude}&longitude=${longitude}&room_qty=${rooms}&dest_ids=${destinationsId}&departure_date=${endDate}&arrival_date=${startDate}&offset=0&search_type=latlong&search_term=${searchTerm}&adults=${adults}&children=${children}`;
         } else{
             router.push(`/search?guest_qty=${adults + children}&latitude=${latitude}&longitude=${longitude}&room_qty=${rooms}&dest_ids=${destinationsId}&departure_date=${endDate}&arrival_date=${startDate}&offset=0&search_type=latlong&search_term=${searchTerm}&adults=${adults}&children=${children}`);
         }

@@ -14,7 +14,7 @@ export default class MyDocument extends Document {
           <link rel="stylesheet" type="text/css" href="/front/css/plugins.css" />
           <link rel="stylesheet" type="text/css" href="/front/css/style.css" />
           <link rel="stylesheet" type="text/css" href="/front/css/templete.css" />
-          <link class="skin" rel="stylesheet" type="text/css" href="/front/css/skin/skin-1.css"></link>
+          <link className="skin" rel="stylesheet" type="text/css" href="/front/css/skin/skin-1.css"></link>
         </Head>
         <body id="bg">
           <Main />
